@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Cadastre o seu pet</title>
+    <style>
+        body{
+            background-image: url(./pets.jpg);
+            background-repeat: no-repeat;
+        }
+        form{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="text">Cadastre o seu pet</h1>
+            </div>
+            <div class="col-sm">
+            </div>
+            <form class="col-sm">
+                <h3>Cadastro do Proprietario</h3>
+                <input type="text" name="nomeP" id="nomeP" class="form-control"  placeholder="Seu nome">
+                <br>
+                <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Telefone">
+                <br>
+                <div class="row">
+                    <div class="col-7">
+                        <input type="date" name="dataP" id="dataP" class="form-control" placeholder="Data de Nascimento">
+                    </div>
+                    <br>
+                    <div class="col-5">
+                        <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF">
+                    </div>
+                </div>
+                <br>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                <br>
+                <h3>Cadastro do Pet</h3>
+                <input type="text" name="nomeA" id="nomeA" class="form-control" placeholder="Insira o nome do seu pet">
+                <br>
+                <div class="row">
+                    <div class="col-7">
+                        <input type="date" name="dataNasA" id="dataA" class="form-control" placeholder="Data de Nascimento">
+                    </div>
+                    <div class="col-5">
+                        <select name="raça" class="form-control" placeholder="Raça">
+                            <option value="cachorro" class="cachorro">Cachorro</option>
+                            <option value="gato" class="gato">Gato</option>
+                            <option value="aquatico" class="aquatico">Aquático</option>
+                            <option value="roedor" class="roedor">Roedor</option>
+                            <option value="reptil" class="reptil">Réptil</option>
+                            <option value="equino" class="equino">Eqüino</option>
+                            <option value="outro" class="outro">Outro</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <select name="sexo" id="sexo" class="form-control" placeholder="Sexo">
+                    <option value="fem">Feminino</option>
+                    <option value="masc">Masculino</option>
+                </select>
+                <h5>Foto do pet</h5>
+                <input type="file" name="fotoA" id="">
+            </form>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</body>
+</html>
